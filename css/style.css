@@ -1,274 +1,330 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 
-.container{
-    background: #060e0f;
-    color: aliceblue;
-    padding: 2rem;
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  background: #060e0f;
+  color: aliceblue;
+  padding: 2rem;
 }
 
 /* Navbar Styling */
-
-nav{
-    /* margin-top: 20px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-nav a{
-    margin: auto 3rem;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: larger;
-    font-family: "Montserrat", sans-serif;
+nav a {
+  margin: auto 3rem;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: larger;
 }
 
-nav a:hover{
-    color: #1e86ec;
+nav a:hover {
+  color: #1e86ec;
 }
 
-/* //hero-section styling */
-
-.hero-section{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+/* Hero Section Styling */
+.hero-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
-.img{
-    text-align: center;
+.img {
+  text-align: center;
 }
 
-.headline{
-    text-align: center;
-    max-width: 60vw;
-    font-family: "Montserrat", sans-serif;
-    font-size: x-large;
+.img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.headline {
+  text-align: center;
+  max-width: 60vw;
+  font-size: x-large;
+  margin: 1rem auto;
 }
 
 form {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
-
-
 
 form input {
-    width: 50%;
-    padding: 0.5rem;
-    font-family: "Montserrat", sans-serif;
-    
+  width: 50%;
+  padding: 0.5rem;
 }
 
-#Sub{
-    padding: 0.5rem;
-    background: #1eec58;
-    outline: none;
-    border-radius: 5%;
-    padding-left: 0.8rem;
-    padding-right: 0.8rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 600;
-    color: aliceblue;
-    font-size: medium;
+#Sub {
+  padding: 0.5rem 0.8rem;
+  background: #1eec58;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: aliceblue;
+  font-size: medium;
+  cursor: pointer;
 }
 
-#Sub:hover{
-    background: #097526;
-    /* box-shadow: 0px 0px white; */
-    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+#Sub:hover {
+  background: #097526;
 }
 
-
-/* // Styling Recent-Articles */
-
-
-.recent-container{
-
-    font-family: "Montserrat", sans-serif;
-    background: #0b181a;
-    margin: 0;
-
-
+/* Recent Articles Styling */
+.recent-container {
+  background: #0b181a;
+  margin: 0;
+  padding: 2rem 0;
 }
 
-.recent-container h2{
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-    color: aliceblue;
-    padding-top: 2rem;
+.recent-container h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  color: aliceblue;
+  padding-top: 2rem;
 }
 
-.recent-articles{
-
+.recent-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  column-gap: 0.5rem;
+  gap: 0.5rem;
   padding: 2rem;
-   
-
 }
 
-
-
-/* // Styling card for recent articles */
-
-.recents{
-
-    display: grid;
-    grid-template-rows: auto 1fr;
-    overflow: hidden;
-    width: 20vw;
-    /* height: 23vh; */
-    background: #141617;
-    border-radius: 2%;
-    transition: box-showdow 2s ease-in-out, transform 2s ease;
-
+.recents {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+  width: 20vw;
+  background: #141617;
+  border-radius: 2%;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
 }
 
 .recents img {
-    width: 100%;
-    /* overflow: hidden; */
-    max-height: 675px;
-    box-shadow: 0 0px 5px aliceblue;
+  width: 100%;
+  max-height: 675px;
+  object-fit: cover;
+  box-shadow: 0 0 5px aliceblue;
 }
 
 .recents p {
-
-    width: 100%;
-    color: aliceblue;
-    font-size: 1.5rem;
-    padding: 0.7em;
-
+  width: 100%;
+  color: aliceblue;
+  font-size: 1.5rem;
+  padding: 0.7em;
 }
 
-.recents:hover{
-
-    box-shadow: 1px 1px 4px #1e86ec;
-    transform: scale(1.04);
+.recents:hover {
+  box-shadow: 1px 1px 4px #1e86ec;
+  transform: scale(1.04);
 }
 
-
-
-
-/* // Styling Articles section */
-
-.articles ul{
-
-    list-style-type: none;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+/* Articles Section Styling */
+.articles ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.articles ul li{
-
-    margin: 3rem;
-    max-width: 60vw;
-    padding: 1em;
-    cursor: pointer;
+.articles ul li {
+  margin: 3rem;
+  max-width: 60vw;
+  padding: 1em;
+  cursor: pointer;
 }
 
-.articles ul li p{
-    
-    margin: 1.5rem 0;
-    margin-bottom: 0;
-
-    /* max-width: 60vw; */
-    /* padding: 4em; */
+.articles ul li p {
+  margin: 1.5rem 0;
+  margin-bottom: 0;
 }
 
-.articles ul li h2{
-    color: #489cf0;
+.articles ul li h2 {
+  color: #489cf0;
 }
 
-.articles ul li h2:hover{
-    color: #0e77e1;
-    text-decoration: underline; 
+.articles ul li h2:hover {
+  color: #0e77e1;
+  text-decoration: underline;
 }
 
-
-/* //Styling FAQs section */
-
+/* FAQ Section Styling */
 .faq-container {
-    font-family: "Montserrat", sans-serif;
-    background: #0b181a;
-    color: aliceblue;
-    padding: 2rem;
+  background: #0b181a;
+  color: aliceblue;
+  padding: 2rem;
 }
 
-.faq-container h2{
-    padding: 1rem;
-    padding-left: 0;
+.faq-container h2 {
+  padding: 1rem 0;
+  font-size: 2rem;
 }
 
 .faq-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.faq-table th, .faq-table td {
-    border: 1px solid #1e86ec;
-    padding: 1rem;
-    text-align: left;
+.faq-table th,
+.faq-table td {
+  border: 1px solid #1e86ec;
+  padding: 1rem;
+  text-align: left;
 }
 
 .faq-table th {
-    background-color: #141617;
-    color: #489cf0;
+  background-color: #141617;
+  color: #489cf0;
 }
 
 .faq-table td {
-    background-color: #141617;
+  background-color: #141617;
 }
 
 .faq-table tr:hover {
-    background-color: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
-/* //styling footer */
-
+/* Footer Styling */
 footer {
-    background: #060e0f;
-    color: aliceblue;
-    padding: 2rem 0;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
+  background: #060e0f;
+  color: aliceblue;
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .footer-content {
-    max-width: 60vw;
-    margin: 0 auto;
+  max-width: 60vw;
+  margin: 0 auto;
 }
 
 .footer-content p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .footer-content a {
-    color: #1e86ec;
-    text-decoration: none;
+  color: #1e86ec;
+  text-decoration: none;
 }
 
 .footer-content a:hover {
-    color: #0e77e1;
-    text-decoration: underline;
+  color: #0e77e1;
+  text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .recent-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .recents {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0.5rem;
+  }
+
+  .headline {
+    max-width: 90vw;
+    font-size: large;
+  }
+
+  form {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  form input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #Sub {
+    width: 100%;
+  }
+
+  .recent-articles {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .recents {
+    width: 80vw;
+  }
+
+  .articles ul li {
+    max-width: 90vw;
+    margin: 1.5rem;
+  }
+
+  .faq-table {
+    font-size: 0.9rem;
+  }
+
+  .footer-content {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .headline {
+    font-size: medium;
+  }
+
+  .recent-container h2 {
+    font-size: 2rem;
+  }
+
+  .recents p {
+    font-size: 1.2rem;
+  }
+
+  .articles ul li h2 {
+    font-size: 1.2rem;
+  }
+
+  .faq-table {
+    font-size: 0.8rem;
+  }
+
+  .faq-table th,
+  .faq-table td {
+    padding: 0.5rem;
+  }
 }
